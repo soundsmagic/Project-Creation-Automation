@@ -38,7 +38,7 @@ with open(".\CODE_OF_CONDUCT.md", "w") as f:
 
 # Fetch and create license
 print("Fetching and creating license...")
-print(subprocess.run([shutil.which("npx"), "license", "MIT"]))
+subprocess.run([shutil.which("npx"), "license", "MIT"])
 
 # Create a Readme file, a requirements file, and Python files
 print("Creating Readme, requirements, and Python files...")
