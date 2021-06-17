@@ -72,3 +72,7 @@ venv.create(f"C:\\dev\\Python Virtual Environments\\{sys.argv[1]}_env")
 subprocess.run(
     f"C:\\dev\\Python Virtual Environments\\{sys.argv[1]}_env\\Scripts\\activate.bat"
 )
+
+# Starting VS Code from the project folder
+print("Starting VS Code...")
+subprocess.run([shutil.which("code"), "."])
