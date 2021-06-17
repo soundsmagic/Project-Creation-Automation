@@ -33,7 +33,7 @@ with open(".\CODE_OF_CONDUCT.md", "w") as f:
     f.write(
         requests.get(
             "https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct.md"
-        ).text.replace("[INSERT CONTACT METHOD]", "john-svensson@hotmail.com")
+        ).text.replace("[INSERT CONTACT METHOD]", os.environ["MY_EMAIL"])
     )
 
 # Fetch and create license
