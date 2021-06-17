@@ -66,12 +66,9 @@ print("Adding remote and making the first push...")
 subprocess.run(["git", "remote", "add", "origin", repo.clone_url])
 subprocess.run(["git", "push", "origin", "main"])
 
-# Create and activate a Virtual Environment for the project
+# Create a Virtual Environment for the project
 print("Creating and activating Virtual Environment...")
 venv.create(f"C:\\dev\\Python Virtual Environments\\{sys.argv[1]}_env")
-subprocess.run(
-    f"C:\\dev\\Python Virtual Environments\\{sys.argv[1]}_env\\Scripts\\activate.bat"
-)
 
 # Starting VS Code from the project folder
 print("Starting VS Code...")
